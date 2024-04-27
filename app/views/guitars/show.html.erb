@@ -1,0 +1,46 @@
+<div class="intoro">
+            <h5>診断結果</h5>
+            <p>あなたにおすすめの曲は…</p>
+        </div>
+        <div class="tweet-container">
+            <div class="tweet">
+                <% case [@guitars.question] %>
+                <% when ["1"] %>
+                <h4>・夜行</h4>
+                <h4>・風を食む</h4>
+
+                <p></p>
+                
+
+                <% when ["2"] %>
+                <h4>・春泥棒</h4>
+                <h4>・夜行</h4>
+                <h4>・風を食む</h4>
+
+                <p></p>
+            
+                <% when ["3"] %>
+                <h4>・雨とカプチーノ</h4>
+                
+                <p></p>
+
+                <% when ["4"] %>
+                <h4>・昼鳶</h4>
+                
+                <p></p>
+
+                <% when ["5"] %>
+                <h4>・花人局</h4>
+                
+                <p></p>
+
+                <% when ["6"] %>
+                <h4></h4>
+                
+                <p></p>
+
+                <% end %>     
+
+        </div>
+
+<%= link_to "トップページ", posts_path %>

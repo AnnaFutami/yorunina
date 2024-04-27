@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+    <head>
+        <meta charset="utf-8">
+        <title>ヨルシカ曲診断</title>
+    </head>
+
+    <a>.</a>
+    <p>.</p>
+    <%= image_tag 'logo.jpg', width: '100%' %>
+
+    <h3>
+        <body>
+            <header>
+                <h1 class="headline">
+                <a>ヨルシカ曲診断</a>
+                </h1>
+                
+            </header>
+
+            <div class="start">
+            
+                <%= link_to new_post_path do %>
+                    <%= image_tag 'listen.jpg', class:"logo-image", width: '30%' %>
+                <% end %>
+                <%= link_to new_song_path do %>
+                    <%= image_tag 'sing.jpg', class:"logo-image", width: '30%' %>
+                <% end %>
+                <%= link_to new_guitar_path do %>
+                    <%= image_tag 'play.jpg', class:"logo-image", width: '30%' %>
+                <% end %>
+                
+                    
+            </div>
+
+            <header>
+                <h1 class="headline">
+                <a>🍋個体ルーム🍋<a>
+                </h1>
+            </header>
+
+            
+            <%= link_to "ログイン", tweets_path %>
+            <%= link_to "新規登録", new_user_registration_path %>
+
+        </body>
+    </h3>

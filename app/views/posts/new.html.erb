@@ -1,0 +1,32 @@
+<%= form_for(@posts, class: 'form-horizontal', role: 'form') do |f| %>
+    <div class="container-sindan">
+        <div class="row">
+            <div class="col-12">
+                <p>聴きたい曲は？</p>
+            </div>
+            <div class="col-6">
+                <p><%= f.radio_button :question, "1" %>明るい気持ちになる歌</p>
+            </div>
+            <div class="col-6">
+                <p><%= f.radio_button :question, "2" %>深く暗い歌</p>
+            </div>
+            <div class="col-6">
+                <p><%= f.radio_button :question, "3" %>テンポと力強さが爽快な歌</p>
+            </div>
+            <div class="col-6">
+                <p><%= f.radio_button :question, "4" %>静かな夜の一人の時間に聴きたい歌</p>
+            </div>
+            <div class="col-6">
+                <p><%= f.radio_button :question, "5" %>インスト（歌のない曲）</p>
+            </div>
+            <div class="col-6">
+                <p><%= f.radio_button :question, "6" %>おまかせ</p>
+            </div>
+
+        </div>
+    </div>
+    <div class="sindanbotan">
+        <%= f.submit "post" %>
+    </div>
+<% end %><br />
+

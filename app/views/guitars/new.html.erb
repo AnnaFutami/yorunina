@@ -1,0 +1,32 @@
+<%= form_for(@guitars, class: 'form-horizontal', role: 'form') do |f| %>
+    <div class="container-sindan">
+        <div class="row">
+            <div class="col-12">
+                <p>練習したいテクニックは？</p>
+            </div>
+            <div class="col-6">
+                <p><%= f.radio_button :question, "1" %>アルペジオ</p>
+            </div>
+            <div class="col-6">
+                <p><%= f.radio_button :question, "2" %>ハマリング・プリング</p>
+            </div>
+            <div class="col-6">
+                <p><%= f.radio_button :question, "3" %>スライド</p>
+            </div>
+            <div class="col-6">
+                <p><%= f.radio_button :question, "4" %>スラップ</p>
+            </div>
+            <div class="col-6">
+                <p><%= f.radio_button :question, "5" %>チョーキング</p>
+            </div>
+            <div class="col-6">
+                <p><%= f.radio_button :question, "6" %>初心者おすすめ</p>
+            </div>
+            
+
+        </div>
+    </div>
+    <div class="sindanbotan">
+        <%= f.submit "post" %>
+    </div>
+<% end %>
