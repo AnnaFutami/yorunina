@@ -1,40 +1,46 @@
-<%= form_for(@songs, class: 'form-horizontal', role: 'form') do |f| %>
-    <div class="container-sindan">
-        <div class="row">
-            <div class="col-12">
-                <p>歌いたい曲は？</p>
-            </div>
-            <div class="col-6">
-                <p><%= f.radio_button :question, "1" %>明るい</p>
-            </div>
-            <div class="col-6">
-                <p><%= f.radio_button :question, "2" %>力強い・かっこいい</p>
-            </div>
-            <div class="col-6">
-                <p><%= f.radio_button :question, "3" %>エモい・静か</p>
-            </div>
-            <div class="col-6">
-                <p><%= f.radio_button :question, "4" %>みんな知っている曲</p>
-            </div>
+<div class="back2">
+    <div class="sindan">
+        <%= form_for(@songs, class: 'form-horizontal', role: 'form') do |f| %>
+            <div class="container-sindann">
+                <div class="row">
+                    <div class="col-12">
+                        <p>＜歌いたい曲は？＞</p>
+                    </div>
+                    <div class="col-6">
+                        <p><%= f.radio_button :question, "1" %>明るい・楽しい</p>
+                    </div>
+                    <div class="col-6">
+                        <p><%= f.radio_button :question, "2" %>歌えたらかっこいい・</p>
+                    </div>
+                    <div class="col-6">
+                        <p><%= f.radio_button :question, "3" %>盛り上がる・アップテンポ</p>
+                    </div>
+                    <div class="col-6">
+                        <p><%= f.radio_button :question, "4" %>エモい・感動</p>
+                    </div>
 
-            
-            <div class="col-12">
-                <p>キーは？</p>
+                    <div class="key">
+                        <div class="col-12">
+                            <p>＜キーは？＞</p>
+                        </div>
+                        <div class="col-6">
+                            <p><%= f.radio_button :question2, "1" %>高い</p>
+                        </div>
+                        <div class="col-6">
+                            <p><%= f.radio_button :question2, "2" %>普通</p>
+                        </div>
+                        <div class="col-6">
+                            <p><%= f.radio_button :question2, "3" %>低い</p>
+                        </div>
+                    </div>
+                    <p>※質問二つとも答えないと結果が出ません！</p>
+                </div>
             </div>
-            <div class="col-6">
-                <p><%= f.radio_button :question2, "1" %>高い</p>
+            <div class="sindanbotan">
+                <%= f.submit "おすすめを見る" %>
             </div>
-            <div class="col-6">
-                <p><%= f.radio_button :question2, "2" %>普通</p>
-            </div>
-            <div class="col-6">
-                <p><%= f.radio_button :question2, "3" %>低い</p>
-            </div>
-            </div>
-        </div>
-        <div class="sindanbotan">
-            <%= f.submit "post" %>
-        </div>
-        
-<% end %>
+                
+        <% end %>
+    </div>
+</div>
 

@@ -3,60 +3,231 @@
             <p>あなたにおすすめの曲は…</p>
         </div>
         <div class="tweet-container">
-            <div class="tweet">
+            <div class="music">
                 <% case [@songs.question, @songs.question2] %>
                 <% when ["1", "1"] %>
-                <h4>・又三郎</h4>
-
-                <p></p>
+            <div class="results">
+                <p>・<%= link_to '又三郎', song_path(anchor: 'funh1') %></p>
+                <p>・<%= link_to '踊ろうぜ', song_path(anchor: 'funh2') %></p>
+                <p>・<%= link_to 'エイミー', song_path(anchor: 'funh4') %></p>
                 
+            </div>    
+                
+            <div class="result">
+                <h2><div id="funh1">又三郎</div></h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/siNFnlqtd8M?si=wPZSqIEGuJTFdB7_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <h2><div id="funh2">踊ろうぜ</div></h2>
+                <h2><div id="funh4">エイミー</div></h2>
+            </div>    
+
                 <% when ["1", "2"] %>
-                <h4>・晴る</h4>
-
-                <p></p>
-            
-                <% when ["1", "3"] %>
-                <h4>・ブレーメン</h4>
+            <div class="results">
+                <p>・<%= link_to '晴る', song_path(anchor: 'funn1') %></p>
+                <p>・<%= link_to '都落ち', song_path(anchor: 'funn2') %></p>
+                <p>・<%= link_to '老人と海', song_path(anchor: 'funn3') %></p>
+            </div>
                 
-                <p></p>
+            <div class="result">
+                <h2><div id="funn1">晴る</div></h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/CkvWJNt77mU?si=Pw1QTfOy4lfjXwLn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <h2><div id="funn2">都落ち</div></h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/pHdJmDFYqTU?si=qjGruXZmveZCYULj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <h2><div id="funn3">雨とカプチーノ</div></h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/PWbRleMGagU?si=ILnlGORAGoyUh5Ry" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            </div>
+
+
+                <% when ["1", "3"] %>
+            <div class="results">
+                <p>・<%= link_to '斜陽', song_path(anchor: 'funl1') %></p>
+                <p>・<%= link_to 'ブレーメン', song_path(anchor: 'funl2') %></p>
+                <p>・<%= link_to '', song_path(anchor: 'funl3') %></p>
+                <p>・<%= link_to '', song_path(anchor: 'funl4') %></p>
+                <p>・<%= link_to '', song_path(anchor: 'funl5') %></p>
+            </div>   
+                
+            <div class="result">
+                <h2><div id="funl1">斜陽</div></h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/bqigIHMComE?si=DrXUVhxAVR3To-yG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <h2><div id="funl2">ブレーメン</div></h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/oy6MDr6I6rM?si=OMDOpT9D21qWFTqo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <h2><div id="funl3"></div></h2>
+                <h2><div id="funl4"></div></h2>
+                <h2><div id="funl5"></div></h2>
+            </div>
 
                 <% when ["2", "1"] %>
-                <h4>・五月は花緑青の窓辺から</h4>
+            <div class="results">
+                <p>・<%= link_to '八月、某、月明かり', song_path(anchor: 'powerh1') %></p>
+                <p>・<%= link_to '盗作', song_path(anchor: 'powerh2') %></p>
+                <p>・<%= link_to '花人局', song_path(anchor: 'powerh3') %></p>
+            </div>  
                 
-                <p></p>
                 
+            <div class="result">
+                <h2><div id="powerh1">八月、某、月明かり</div></h2>
+                <h2><div id="powerh2">盗作</div></h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/CS4f3jawFxY?si=kkL-Ran8BOmpaQYX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <h2><div id="powerh3">花人局</div></h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Ht6lcYg9Zfo?si=J0ND_B97dKyycyrU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                
+            </div>
+
                 <% when ["2", "2"] %>
-                <h4>・八月、某、月明かり</h4>
-                <p></p>
+            <div class="results">
+                <p>・<%= link_to '昼鳶', song_path(anchor: 'powern1') %></p>
+                <p>・<%= link_to '春ひさぎ', song_path(anchor: 'powern2') %></p>
+                <p>・<%= link_to '藍二乗', song_path(anchor: 'powern3') %></p>
+                <p>・<%= link_to 'カトレア', song_path(anchor: 'powern4') %></p>
+            </div>
+                
+            <div class="result">
+                <h2><div id="powern1">昼鳶</div></h2>
+                <h2><div id="powern2">春ひさぎ</div></h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/F3cXxqgbx9Y?si=61NyGcjNFkYeThpV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <h2><div id="powern3">藍二乗</div></h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/4MoRLTAJY_0?si=duXVHKGf0RqSl52B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <h2><div id="powern4">カトレア</div></h2>
+            </div>
 
                 <% when ["2", "3"] %>
-                <h4>・月に吠える</h4>
-                <p></p>
+            <div class="results">
+                <p>・<%= link_to '月に吠える', song_path(anchor: 'powerl1') %></p>
+                <p>・<%= link_to '強盗と花束', song_path(anchor: 'powerl2') %></p>
+                <p>・<%= link_to '思想犯', song_path(anchor: 'powerl3') %></p>
+            </div>
+                
+            <div class="result">
+                <h2><div id="powerl1">月に吠える</div></h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/wCN9WliV-ew?si=429BQza5pyqrTxic" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <h2><div id="powerl2">強盗と花束</div></h2>
+                <h2><div id="powerl3">思想犯</div></h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ENcnYh79dUY?si=h8pQlXJ_EuTi-b9X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            </div>
 
                 <% when ["3", "1"] %>
-                <h4>・ノーチラス</h4>
-                <p></p>
+            <div class="results">
+                <p>・<%= link_to 'だから僕は音楽を辞めた', song_path(anchor: 'emoh2') %></p>
+                <p>・<%= link_to '五月は花緑青の窓辺から', song_path(anchor: 'emoh3') %></p>
+                <p>・<%= link_to '夕凪、某、花惑い', song_path(anchor: 'emoh4') %></p>
+            </div>
+            
+            <div class="result">
+                <h2><div id="emoh2">だから僕は音楽を辞めた</div></h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/KTZ-y85Erus?si=PpsHvX9_HqSyjlpX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <h2><div id="emoh3">五月は花緑青の窓辺から</div></h2>
+                <h2><div id="emoh4">夕凪、某、花惑い</div></h2>
+            </div>
 
                 <% when ["3", "2"] %>
-                <h4>・風を食む</h4>
-                <p></p>
+            <div class="results">
+                <p>・<%= link_to 'あの夏に咲け', song_path(anchor: 'emon2') %></p>
+                <p>・<%= link_to '負け犬にアンコールはいらない', song_path(anchor: 'emon3') %></p>
+                <p>・<%= link_to '心に穴が空いた', song_path(anchor: 'emon4') %></p>
+            </div>
+
+            <div class="result">
+                <h2><div id="emon2">あの夏に咲け</div></h2>
+                <h2><div id="emon3">負け犬にアンコールはいらない</div></h2>
+                <h2><div id="emon4">心に穴が空いた</div></h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/DlyG6MAKUOA?si=By-uPki_d-mct0zj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            </div>
 
                 <% when ["3", "3"] %>
-                <h4>・第一夜</h4>
-                <p></p>
+            <div class="results">
+                <p>・<%= link_to '爆弾魔', song_path(anchor: 'emol1') %></p>
+                <p>・<%= link_to '準透明人間', song_path(anchor: 'emol2') %></p>
+                <p>・<%= link_to '詩書きとコーヒー', song_path(anchor: 'emol3') %></p>
+            </div>
+
+            <div class="result">
+                <h2><div id="emol1">爆弾魔</div></h2>
+                <h2><div id="emol2">準透明人間</div></h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/9ypEFXTakV8?si=A8pBOFJlol9uvV1Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <h2><div id="emol3">詩書きとコーヒー</div></h2>
+            </div>
 
                 <% when ["4", "1"] %>
-                <h4>・だから僕は音楽を辞めた</h4>
-                <p></p>
+            <div class="results">
+                <p>・<%= link_to 'ノーチラス', song_path(anchor: 'movedh1') %></p>
+                <p>・<%= link_to '靴の花火', song_path(anchor: 'movedh2') %></p>
+                <p>・<%= link_to 'ただ君に晴れ', song_path(anchor: 'movedh3') %></p>
+            </div>
+
+            <div class="result">    
+                <h2><div id="movedh1">ノーチラス</div></h2>
+                    <iframe width='560' height='315' src="https://www.youtube.com/embed/j83OVgv6woA?si=OSe6uMB76mPzAAp2" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtube"></iframe>
+                    <p>地声の音高音はA4(hiA)ですが、全体的に裏声の多い曲です。地声の部分も声をうすーく出して優しい歌い方ができると映えると思います！</p>
+                    <%= image_tag 'ノーチラス.jpg', width: '50%' %>
+                <h2><div id="movedh2">靴の花火</div></h2>
+                    <iframe width='560' height='315' src="https://www.youtube.com/embed/BCt9lS_Uv_Y?si=vrXhNjmt949kOdFA" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen classs="youtube"></iframe>
+                    <p></p>
+                    <%= image_tag '靴の花火.jpg', width: '50%' %>
+                <h2><div id="movedh3">ただ君に晴れ</div></h2>
+                    <iframe width='560' height='315' src="https://www.youtube.com/embed/-VKIqrvVOpo?si=fHuqPiO0c0UOrj4V" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtube"></iframe>
+                    <p></p>
+                    <%= image_tag 'ただ君に晴れ.jpg', width: '50%' %>
+            </div>
+
 
                 <% when ["4", "2"] %>
-                <h4>・ただ君に晴れ</h4>
+            <div class="results">
+                <p>・<%= link_to '左右盲', song_path(anchor: 'movedn1') %></p>
+                <p>・<%= link_to 'パレード', song_path(anchor: 'movedn2') %></p>
+                <p>・<%= link_to '嘘月', song_path(anchor: 'movedn3') %></p>
+            </div>
+
+            <div class="result">    
+                <h2><div id="movedn1">左右盲</div></h2>
+                <iframe width='560' height='315' src="https://www.youtube.com/embed/1IlTeOMCNJU?si=7zEeSmv_0CkxT6eH" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtube"></iframe>
                 <p></p>
+                <%= image_tag '左右盲.jpg', width: '50%' %>
+                <h2><div id="movedn2">パレード</div></h2>
+                <iframe width='560' height='315' src="https://www.youtube.com/embed/ry3Tupx4BL4?si=Af3xXNJsQOpvym-t" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtube"></iframe>
+                <p></p>
+                <%= image_tag 'パレード.jpg', width: '50%' %>
+                <h2><div id="movedn3">嘘月</div></h2>
+                <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/jp/album/%E5%98%98%E6%9C%88/1546186120?i=1546186126"></iframe>
+                <p></p>
+                <%= image_tag '嘘月.jpg', width: '50%' %>
+            </div>
 
                 <% when ["4", "3"] %>
-                <h4>・テレパス</h4>
-                <p></p>
+            <div class="results">
+                <p>・<%= link_to '第一夜', song_path(anchor: 'movedl1') %></p>
+                <p>・<%= link_to '雲と幽霊', song_path(anchor: 'movedl2') %></p>
+                <p>・<%= link_to '憂一乗', song_path(anchor: 'movedl3') %></p>
+            </div>
 
+            <div class="result">    
+                <h2><div id="movedl1">第一夜</div></h2>
+                <iframe width='560' height='315' src="https://www.youtube.com/embed/-R8UiY_44Y0?si=0qff7z17q6YHPpG1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtube"></iframe>
+                <p></p>
+                <%= image_tag '第一夜.jpg', width: '50%' %>
+                <h2><div id="movedl2">雲と幽霊</div></h2>
+                <iframe width='560' height='315' src="https://www.youtube.com/embed/JJaCwW4HyVs?si=kOPYNobXIWqwjAop" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtube"></iframe>
+                <p></p>
+                <%= image_tag '雲と幽霊.jpg', width: '50%' %>
+                <h2><div id="movedl3">憂一乗</div></h2>
+                <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/jp/album/%E6%86%82%E4%B8%80%E4%B9%97/1474061924?i=1474061935"></iframe>
+                <p></p>
+                <%= image_tag '憂一乗.jpg', width: '50%' %>
+            </div>
+            
                 <% end %>     
 
         </div>

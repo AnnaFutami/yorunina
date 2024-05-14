@@ -1,3 +1,45 @@
 // Place all the styles related to the tweets controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+
+.screen {
+
+}
+
+.screen h1 {
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 20px;
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.screen h3 {
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 20px;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.tweete-info {
+    
+}
+
+.tweets-container {
+    width: 50%;
+    margin: 10px auto;
+}
+
+.tweet {
+    border-top: solid #00acee;
+    margin-top: 10px;
+    padding-top: 20px;
+}
+
+.time {
+    display: flex;
+    justify-content: flex-end;
+}

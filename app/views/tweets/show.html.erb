@@ -1,31 +1,34 @@
-<h1>個体ルーム</h1>
-<h3>コメント詳細</h3>
+<div class="screen">  
+    <h1>個体ルーム</h1>
+    <h3>コメント詳細</h3>
 
-<div class="tweet">
-  <p><%= @tweet.user.email %></p>
-  <p><%= @tweet.body %></p>
-  <p><%= @tweet.created_at %></p>
+    <div class="tweet">
+      <p><%= @tweet.user.name %></p>
+      <p><%= @tweet.body %></p>
+      <p><%= @tweet.created_at %></p>
 
-    <% if user_signed_in? %>
-      <% if current_user.already_liked?(@tweet) %>
-        <%= link_to tweet_like_path(@tweet), method: :delete do %>
-           <i class="fa-regular fa-lemon" style="color:yellow;"></i><%= @tweet.likes.count %>
-        <% end %>
-      <% else %>
-        <%= link_to tweet_likes_path(@tweet), method: :post do %>
+        <% if user_signed_in? %>
+          <% if current_user.already_liked?(@tweet) %>
+            <%= link_to tweet_like_path(@tweet), method: :delete do %>
+              <i class="fa-regular fa-lemon" style="color:yellow;"></i><%= @tweet.likes.count %>
+            <% end %>
+          <% else %>
+            <%= link_to tweet_likes_path(@tweet), method: :post do %>
+              <i class="fa-regular fa-lemon" style="color:yellow;"></i><%= @tweet.likes.count %>
+            <% end %>
+          <% end %>
+        <% else %>
           <i class="fa-regular fa-lemon" style="color:yellow;"></i><%= @tweet.likes.count %>
         <% end %>
-      <% end %>
-    <% else %>
-      <i class="fa-regular fa-lemon" style="color:yellow;"></i><%= @tweet.likes.count %>
-    <% end %>
-  
+      
+    </div>
+
+
+    <% if user_signed_in? && current_user.id == @tweet.user_id %>
+      <%= link_to "編集", edit_tweet_path(@tweet.id) %>
+      <%= link_to "削除", tweet_path(@tweet.id), method: :delete %>
+    <% end %> 
+
 </div>
 
-<h2>いいねしたユーザー</h2>
-<% @tweet.liked_users.each do |user| %>
-  <li><%= user.id %></li>
-<% end %>
-
-<%= link_to "編集する", edit_tweet_path(@tweet.id) %>
 <%= link_to "コメント一覧に戻る", tweets_path %>

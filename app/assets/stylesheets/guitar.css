@@ -1,0 +1,58 @@
+.intoro {
+
+}
+
+.intoro h5 {
+    font-size: 30px;
+}
+
+.intoro p {
+
+}
+
+.tweet-container {
+
+}
+
+.tweet {
+    
+}
+
+.tweet p {
+    
+}
+
+.tweet h2 {
+    padding: 30px;
+}
+
+.results {
+    padding: 5px;
+    height: 150px;
+    width: 300px;
+    background-color: rgb(247, 242, 228);
+    border: 2px solid #716f6f
+}
+
+.result p {
+    padding: 10px;
+    
+}
+
+.result h2 {
+    border-bottom: solid #525252;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    padding-bottom: 20px;
+   
+}
+
+.technique {
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+    height: 30px;
+    width: 300px;
+    background-color: rgb(253, 223, 184);
+    border: 0px solid #716f6f
+}

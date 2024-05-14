@@ -1,45 +1,225 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="guitar.css">
+</head>
+
 <div class="intoro">
-            <h5>診断結果</h5>
             <p>あなたにおすすめの曲は…</p>
         </div>
         <div class="tweet-container">
-            <div class="tweet">
-                <% case [@guitars.question] %>
-                <% when ["1"] %>
-                <h4>・夜行</h4>
-                <h4>・風を食む</h4>
+            <div class="music">
+                    <% case [@guitars.question] %>
+                    <% when ["1"] %>
+                <div class="results">
+                    <p>・<%= link_to '夜行', guitar_path(anchor: 'acoustic1') %></p>
+                    <p>・<%= link_to '風を食む', guitar_path(anchor: 'acoustic2') %></p>
+                    <p>・<%= link_to '月光浴', guitar_path(anchor: 'acoustic3') %></p>
+                    <p>・<%= link_to '憂一乗', guitar_path(anchor: 'acoustic4') %></p>
+                    <p>・<%= link_to '昼鳶', guitar_path(anchor: 'acoustic5') %></p>
+                </div>
 
-                <p></p>
+                <div class="result">
+                    <h2><div id="acoustic1">夜行　★☆☆☆☆</div></h2>
+                    <iframe width='560' height='315' src="https://www.youtube.com/embed/JZwp0f1hr74?si=q4aAC1A2IMOAPXPZ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtube"></iframe>
+                    <p>テンポがゆっくりで難しいところも少ないので、ギターを始めたばかりの方におすすめです！</p>
+                        <div class="technique">
+                            <p>アルペジオ、ハンマリング、プリング</p>
+                        </div>
+
+                    <h2><div id="acoustic2">風を食む　★★★☆☆</div></h2>
+                    <iframe width='560' height='315' src="https://www.youtube.com/embed/lvMzBBXKY50?si=3fz9xSE6FTgIJiM-" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtube"></iframe>
+                    <p>ギター自体はそこまで難しくないですが、少し早めのハマリングと独特のテンポ感で、弾き語ると少しリズムがとりずらいです。<br>弾けるとけっこう楽しい曲でもあります！</p>
+                        <div class="technique">
+                            <p>アルペジオ、ハンマリング、プリング</p>
+                        </div>
+
+                    <h2><div id="acoustic3">月光浴　★★☆☆☆</div></h2>
+                    <iframe width='560' height='315' src="https://www.youtube.com/embed/TTt66rEweBg?si=dthAmUU0upeeFq03" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtube"></iframe>
+                    <p>Aメロ・Bメロの静けさからのサビの爆発的な盛り上がりがかなりクセになります！<br>サビ前のミュートのピッキング最高！</p>
+                        <div class="technique">
+                            <p>アルペジオ、ハンマリング</p>
+                        </div>
+
+                    <h2><div id="acoustic4">憂一乗　★☆☆☆☆</div></h2>
+                    <iframe width='560' height='315' src="https://www.youtube.com/embed/3prHaCcOAa8?si=cNYL7Fmfxs0Yl2LF" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtube"></iframe>
+                    <p>こちらの曲の夜行同様初心者の方におすすめです。<br>サビのストロークはアップを意識するといい感じです！</p>
+                        <div class="technique">
+                            <p>—</p>
+                        </div>
+
+                    <h2><div id="acoustic5">昼鳶　★★★★★</div></h2>
+                    <iframe width='560' height='315' src="https://www.youtube.com/embed/jGw-m_NMbgQ?si=FGQWKFeHJIYwzwnW" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtube"></iframe>
+                    <p>ギタリストが必ずといっていいほど弾いてみたくなる曲ですね！<br>このリズムでギターを弾きながら歌える人は変態といっても過言じゃないです笑</p>
+                        <div class="technique">
+                            <p>スラップ、ハンマリング</p>
+                        </div>
+
+                </div>
+                    
                 
+                    <% when ["2"] %>
+                <div class="results">
+                    <p>・<%= link_to '晴る', guitar_path(anchor: 'code1') %></p>
+                    <p>・<%= link_to '逃亡', guitar_path(anchor: 'code2') %></p>
+                    <p>・<%= link_to '左右盲', guitar_path(anchor: 'code3') %></p>
+                    <p>・<%= link_to 'ブレーメン', guitar_path(anchor: 'code4') %></p>
+                    <p>・<%= link_to 'チノカテ', guitar_path(anchor: 'code5') %></p>
+                </div>    
 
-                <% when ["2"] %>
-                <h4>・春泥棒</h4>
-                <h4>・夜行</h4>
-                <h4>・風を食む</h4>
+                <div class="result">
+                    <h2><div id="code1">晴る　★☆☆☆☆</div></h2>
+                    <iframe width='560' height='315' src="https://www.youtube.com/embed/5ivsCbzsqiM?si=_aEC6KhOfniikfW0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtube"></iframe>
 
-                <p></p>
-            
-                <% when ["3"] %>
-                <h4>・雨とカプチーノ</h4>
+                    <h2><div id="code2">逃亡　★★☆☆☆</div></h2>
+                    <iframe width='560' height='315' src="https://www.youtube.com/embed/mfK_bMVzBCk?si=DKxjzhbG9FQcZjFR" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtube"></iframe>
+
+                    <h2><div id="code3">左右盲　★☆☆☆☆</div></h2>
+                    <iframe width='560' height='315' src="https://www.youtube.com/embed/Ut40DYwejaE?si=IKuaerCqnxzhL8v7" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtube"></iframe>
+
+                    <h2><div id="code4">ブレーメン　★★☆☆☆</div></h2>
+                    <iframe width='560' height='315' src="https://www.youtube.com/embed/parFBKhYYv0?si=nWF4jmD-45f0xcB2" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtube"></iframe>
+
+                    <h2><div id="code5">チノカテ　★☆☆☆☆</div></h2>
+                    <iframe width='560' height='315' src="https://www.youtube.com/embed/BelrERYzyWY?si=xaE5a0trShf0Glnk" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtube"></iframe>
+
+                </div>
+
                 
-                <p></p>
+                    <% when ["3"] %>
+                <div class="results">
+                    <p>・<%= link_to '春泥棒', guitar_path(anchor: 'capo1') %></p>
+                    <p>・<%= link_to '春泥棒', guitar_path(anchor: 'capo2') %></p>
+                    <p>・<%= link_to '春泥棒', guitar_path(anchor: 'capo3') %></p>
+                    <p>・<%= link_to '春泥棒', guitar_path(anchor: 'capo4') %></p>
+                    <p>・<%= link_to '春泥棒', guitar_path(anchor: 'capo5') %></p>
+                </div>
+                   
+                <div class="result">
+                    <h2><div id="capo1">春泥棒</div></h2>
+                    
 
-                <% when ["4"] %>
-                <h4>・昼鳶</h4>
+                    <h2><div id="capo2">あの夏に咲け</div></h2>
+                    
+
+                    <h2><div id="capo3">あの夏に咲け</div></h2>
+                    
+
+                    <h2><div id="capo4">あの夏に咲け</div></h2>
+                    
+
+                    <h2><div id="capo5">あの夏に咲け</div></h2>
+                    
+                </div>
+
                 
-                <p></p>
+                    <% when ["4"] %>
+                <div class="results">
+                    <p>・<%= link_to '夕凪、某、花惑い', guitar_path(anchor: 'electric1') %></p>
+                    <p>・<%= link_to '言って', guitar_path(anchor: 'electric2') %></p>
+                    <p>・<%= link_to 'カトレア', guitar_path(anchor: 'electric3') %></p>
+                    <p>・<%= link_to '藍二乗', guitar_path(anchor: 'electric4') %></p>
+                    <p>・<%= link_to '靴の花火', guitar_path(anchor: 'electric5') %></p>
+                </div>
+                    
+                <div class="result">
+                    <h2><div id="electric1">夕凪、某、花惑い</div></h2>
+                    <iframe width='560' height='315' src="https://www.youtube.com/embed/bnpIj4o2KJQ?si=2ckfb2LsiM-PGzM2" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtube"></iframe>
 
-                <% when ["5"] %>
-                <h4>・花人局</h4>
+                    <h2><div id="electric2">言って</div></h2>
+                    <iframe width='560' height='315' src="https://www.youtube.com/embed/xwO-lo7nHZQ?si=lnY3IC0l_VRNmmdL" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtube"></iframe>
+
+                    <h2><div id="electric3">カトレア</div></h2>
+                    <iframe width='560' height='315' src="https://www.youtube.com/embed/6vDgyWZXbh4?si=8NTkYoCuQvWeAE3P" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtube"></iframe>
+
+                    <h2><div id="electric4">藍二乗</div></h2>
+                    <iframe width='560' height='315' src="https://www.youtube.com/embed/HqDdaqyGZZg?si=7BBml-TNW2T3Yn0B" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtube"></iframe>
+
+                    <h2><div id="electric5">靴の花火</div></h2>
+                    <iframe width='560' height='315' src="https://www.youtube.com/embed/N_AHvt6odpg?si=NP2vfRSxFpvOBLZ9" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtube"></iframe>
+
+                </div>
+
+                    <% when ["5"] %>
+                <div class="results">
+                    <p>・<%= link_to 'あの夏に咲け', guitar_path(anchor: 'band1') %></p>
+                    <p>・<%= link_to '準透明人間', guitar_path(anchor: 'band2') %></p>
+                    <p>・<%= link_to '爆弾魔', guitar_path(anchor: 'band3') %></p>
+                    <p>・<%= link_to '負け犬にアンコールはいらない', guitar_path(anchor: 'band4') %></p>
+                    <p>・<%= link_to '踊ろうぜ', guitar_path(anchor: 'band5') %></p>
+                </div>
+                    
+                <div class="result">
+                    <h2><div id="band1">あの夏に咲け</div></h2>
+                    <iframe width='560' height='315' src="https://www.youtube.com/embed/RhxSeSivXos?si=_o3pIYv5x6bJsof3" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtube"></iframe>
+
+                    <h2><div id="band2">準透明人間</div></h2>
+                    <iframe width='560' height='315' src="https://www.youtube.com/embed/ylYvHQzMQOI?si=TqX7RLKsiB_SBDLB" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtube"></iframe>
+
+                    <h2><div id="band3">爆弾魔</div></h2>
+                    <iframe width='560' height='315' src="https://www.youtube.com/embed/Ji2kSUroN9M?si=f6Z6j-ZIH4rXtXgS" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtube"></iframe>
+
+                    <h2><div id="band4">負け犬にアンコールはいらない</div></h2>
+                    <iframe width='560' height='315' src="https://www.youtube.com/embed/eHwMcS6CPk0?si=0UdGlwcYjy-rlETc" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtube"></iframe>
+
+                    <h2><div id="band5">踊ろうぜ</div></h2>
+                    <iframe width='560' height='315' src="https://www.youtube.com/embed/2-pYWRtJx5o?si=-gbv923kJ1G-x9uf" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtube"></iframe>
+
+                </div>
+
                 
-                <p></p>
+                    <% when ["6"] %>
+                <div class="results">
+                    <p>・<%= link_to '嘘月', guitar_path(anchor: 'piano1') %></p>
+                    <p>・<%= link_to 'だから僕は音楽を辞めた', guitar_path(anchor: 'piano2') %></p>
+                    <p>・<%= link_to '盗作', guitar_path(anchor: 'piano3') %></p>
+                    <p>・<%= link_to 'テレパス', guitar_path(anchor: 'piano4') %></p>
+                    <p>・<%= link_to '第一夜', guitar_path(anchor: 'piano5') %></p>
+                </div>
+                    
+                <div class="result">
+                    <h2><div id="piano1">嘘月★★☆☆☆</div></h2>
+                    <iframe width='560' height='315' src="https://www.youtube.com/embed/AyF4hA3INPg?si=ykXJ4_ue_LMVxMxh" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtube"></iframe>
+                    <p>テンポはあまり早くなく、難しいフレーズもないので歌いながら弾くならまずこの曲ではないでしょうか！ピアノ初心者の方にもおすすめです！</p>
+                        <div class="technique">
+                            <p>BPM:80、キー：D(#2)</p>
+                        </div>
 
-                <% when ["6"] %>
-                <h4></h4>
-                
-                <p></p>
 
-                <% end %>     
+                    <h2><div id="piano2">だから僕は音楽を辞めた★★★★★</div></h2>
+                    <iframe width='560' height='315' src="https://www.youtube.com/embed/vHXifadSF4M?si=EVKUPgNYXK-qBy5x" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtube"></iframe>
+                    <p>ひたすら16分音符です！ピアノソロが美しすぎるんですが難しい難しい笑<br>そしてこの曲にはピアノの天敵である転調があります！転調後のほうが簡単なのですがややこしいことに変わりはありません。<br>でも弾けるととても！かなり！楽しい曲です！<br>歌詞では「辞めた筈のピアノ」「音楽はしてないといいね」とか言ってるのにピアノが美しすぎるんだ、、！！！</p>
+                        <div class="technique">
+                            <p>BPM:125、キー：C#m(#4)</p>
+                        </div>
+
+
+                    <h2><div id="piano3">盗作★★★☆☆</div></h2>
+                    <iframe width='560' height='315' src="https://www.youtube.com/embed/kvP87KUWQlI?si=v4RoTpyhwjfUqrcb" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtube"></iframe>
+                    <p>★４にするか迷いました、、手が小さい方は少し大変かもです、、<br>オクターブが多いイメージです！それ以外ではそこまで難しい部分はありません。Aメロの跳ねるようなリズムが心地いですね。</p>
+                        <div class="technique">
+                            <p>BPM:100、キー：D♭(♭5)</p>
+                        </div>
+
+
+                    <h2><div id="piano4">テレパス★★★☆☆</div></h2>
+                    <iframe width='560' height='315' src="https://www.youtube.com/embed/FJtNKNB96-8?si=3yQ-NNKqeOawE2LX" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtube"></iframe>
+                    <p>この曲のピアノパートは三連符が特徴的で早く難しそうと感じる方も多いのではないでしょうか。<br>しかし、実際は動きはあまり大きくなく、同じフレーズ（似たようなフレーズ）の繰り返しなで、難易度はそこまで高くありませんのでぜひ弾いてみてください！</p>
+                        <div class="technique">
+                            <p>BPM:140、キー：E(#4)</p>
+                        </div>
+
+
+                    <h2><div id="piano5">第一夜★★☆☆☆</div></h2>
+                    <iframe width='560' height='315' src="https://www.youtube.com/embed/MsmHn0R4d-0?si=R1yOb8N2jmetqQTQ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtube"></iframe>
+                    <p>全体を通してゆっくりとした曲で、難しいフレーズもないので、かなり弾き語りやすい曲と言えます！<br>ピアノといえばこの曲を思い浮かべる方は多いのではないでしょうか！</p>
+                        <div class="technique">
+                            <p>BPM:75、キー：B♭(♭2)</p>
+                        </div>
+
+
+                </div>
+
+                <% end %>  
+            </div>   
 
         </div>
 

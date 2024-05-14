@@ -4,23 +4,65 @@
     <head>
         <meta charset="utf-8">
         <title>ヨルシカ曲診断</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <%= csrf_meta_tags %>
+        <%= csp_meta_tag %>
+        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.3.7/css/swiper.min.css">
+
     </head>
 
-    <a>.</a>
-    <p>.</p>
-    <%= image_tag 'logo.jpg', width: '100%' %>
+    <body>
+        <%= image_tag 'logo.jpg', width: '100%' %>
 
-    <h3>
-        <body>
-            <header>
-                <h1 class="headline">
-                <a>ヨルシカ曲診断</a>
-                </h1>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.3.7/js/swiper.min.js"></script>
+
+        <div class="swiper-container"> 
+            <div class="swiper-wrapper"> 
+                <div class="swiper-slide"><img src="/assets/spring.jpg" alt style="width: 100%; height: 100%;"></div>
+                <div class="swiper-slide"><img src="/assets/summer.jpg" alt style="width: 100%; height: 100%;"></div>
+                <div class="swiper-slide"><img src="/assets/autumn.jpg" alt style="width: 100%; height: 100%;"></div>
+                <div class="swiper-slide"><img src="/assets/winter.jpg" alt style="width: 100%; height: 100%;"></div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-after"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.3.7/js/swiper.min.js"></script>
+        <script>
+            var mySwiper = new Swiper ('.swiper-container', {
+                loop: true,        
+                effect: 'slide',   
+                speed: 3000,       
+                autoplay: {        
+                    delay: 3000,
+                    disableOnInteraction: true
+                },
+                pagination: {      
+                    el: '.swiper-pagination',
+                    type: 'bullets',
+                    clickable: true
+                },
+                navigation: {  
+                    afterEl: '.swiper-button-after',    
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        </script>
+
+        <div class="main-container">
+            
+            <h1 class="headline">
+                <a>ヨルシカ曲診断　　　　　　　　　　　　　　　　　　　</a>
+                <p>このサイトでは、「聴く」「歌う」「ギター（一つだけピアノ）」の項目別に独断と偏見で曲をおすすめします。ぜひ気軽に楽しんでください！</p>
                 
-            </header>
+            </h1>          
 
             <div class="start">
-            
+
                 <%= link_to new_post_path do %>
                     <%= image_tag 'listen.jpg', class:"logo-image", width: '30%' %>
                 <% end %>
@@ -30,19 +72,39 @@
                 <%= link_to new_guitar_path do %>
                     <%= image_tag 'play.jpg', class:"logo-image", width: '30%' %>
                 <% end %>
-                
                     
             </div>
 
-            <header>
-                <h1 class="headline">
-                <a>🍋個体ルーム🍋<a>
-                </h1>
-            </header>
+        </div>
 
+        <div class="content">
+            <h1 class="headline">
+            <a>個体ルーム　　　　　　　　　　　　　　　　　　　　　<a>
+            <p>ヨルシカについてお話できるコミュニティスペースです。最低限のマナーは守りつつみんなで愛を語り合いましょう～</p>
+            <h6>※利用にはアカウント登録が必要です</h6>
+            </h1>
+
+            <div class="community">
+                <div class="rogin">
+                    <p>アカウントをお持ちの方</p>
+                    <p>↓↓↓</p>
+                    <h2><%= link_to "ログイン", tweets_path %></h2>
+                </div>
+                <div class="signup">
+                    <p>アカウントを持っていない方</p>
+                    <p>↓↓↓</p>
+                    <h2><%= link_to "新規登録", new_user_registration_path %></h2>
+                </div>
+            </div>
             
-            <%= link_to "ログイン", tweets_path %>
-            <%= link_to "新規登録", new_user_registration_path %>
+        </div>
 
-        </body>
-    </h3>
+        <div class="text">
+        </div>
+    </body>
+        <footer>
+            <small>©CSS Seminar</small>
+        </footer>
+    
+</html>
+

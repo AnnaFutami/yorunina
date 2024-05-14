@@ -1,37 +1,43 @@
-<h1>個体ルーム</h1>
-<%= button_to 'ログアウト', destroy_user_session_path, method: :delete %>
-<h3>コメント一覧</h3>
-<%= link_to "新規投稿へ", new_tweet_path %>
-<%= page_entries_info @tweets %>
-<%= paginate @tweets %>
+<div class="screen"> 
+    
+    <h1>個体ルーム</h1>
+    <h3>コメント一覧</h3>
+    <%= page_entries_info @tweets %>
+    <%= paginate @tweets %>
+    
 
-<div class="tweets-container">
-  <% @tweets.each do |t| %>
-    <div class="tweet">
-      <%= t.user_id %>
-      <%= t.body %>
-  <% if user_signed_in? %>
-    <%= link_to "マイページへ", user_path(current_user.id) %>
-  <% end %>
-  <% if user_signed_in? %>
-      <% if current_user.already_liked?(t) %>
-          <%= link_to tweet_like_path(id: t.id, tweet_id: t.id), method: :delete do %>
-            <i class="fa-regular fa-lemon" style="color:yellow;"></i><%= t.likes.count %>
-          <% end %>
-      <% else %>
-          <%= link_to tweet_likes_path(id: t.id, tweet_id: t.id), method: :post do %>
-            <i class="fa-regular fa-lemon" style="color:yellow;"></i><%= t.likes.count %>
-          <% end %>
+    <div class="tweets-container">
+      <% @tweets.each do |t| %>
+        <div class="tweet">
+          <%= t.user.name %>
+          <div class="left-container"><%= t.body %></div>
+            <% if user_signed_in? %>
+                <% if current_user.already_liked?(t) %>
+                    <%= link_to tweet_like_path(id: t.id, tweet_id: t.id), method: :delete do %>
+                      <i class="fa-regular fa-lemon" style="color:yellow;"></i><%= t.likes.count %>
+                    <% end %>
+                <% else %>
+                    <%= link_to tweet_likes_path(id: t.id, tweet_id: t.id), method: :post do %>
+                      <i class="fa-regular fa-lemon" style="color:yellow;"></i><%= t.likes.count %>
+                    <% end %>
+                <% end %>
+            <% else %>
+              <i class="fa-regular fa-lemon" style="color:yellow;"></i><%= t.likes.count %>
+            <% end %>
+          <%= link_to "詳細", tweet_path(t.id) %>
+          <% if user_signed_in? && current_user.id == t.user_id %>
+            <%= link_to "編集", edit_tweet_path(t.id) %>
+            <%= link_to "削除", tweet_path(t.id), method: :delete %>
+          <% end %> 
+          <p class="time"><%= t.created_at %></p>
+        </div>
       <% end %>
-  <% else %>
-    <i class="fa-regular fa-lemon" style="color:yellow;"></i><%= t.likes.count %>
-  <% end %>
-      <%= t.created_at %>
-      <%= link_to "詳細へ", tweet_path(t.id) %>
-      <% if user_signed_in? && current_user.id == t.user_id %>
-      <%= link_to "編集する", edit_tweet_path(t.id) %>
-      <%= link_to "削除する", tweet_path(t.id), method: :delete %>
-    <% end %> 
     </div>
-  <% end %>
+
+    <% if user_signed_in? %>
+      <%= link_to "マイページへ", user_path(current_user.id) %>
+    <% end %>
+    <%= link_to "新規投稿へ", new_tweet_path %>
+    <%= button_to 'ログアウト', destroy_user_session_path, method: :delete %>
+
 </div>

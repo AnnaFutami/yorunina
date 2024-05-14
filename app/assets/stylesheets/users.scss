@@ -1,3 +1,52 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+ body {
+    
+    
+ }
+
+ .ground {
+   height: 100vh;
+   width: 100%;
+   background-color: rgb(181, 151, 183);
+   background: linear-gradient(-20deg, #e7acd2 0%, #e4d6ac 100%);
+ }
+
+ .title {
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   text-align: center;
+   padding: 10px;
+   margin: auto;
+   height: 400px;
+   width: 300px;
+   background-color: rgba(253, 253, 253, 0.791);
+   
+ }
+
+ .title h2 {
+    padding: 10px;
+    
+ }
+
+ .title p {
+    font-size: 15px;
+    padding: 5px;
+ }
+
+ .field {
+    
+ }
+
+ .actions {
+    margin: auto;
+    padding: 20px;
+    height: 20px;
+    width: 50px;
+
+ }

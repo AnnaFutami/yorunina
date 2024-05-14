@@ -1,32 +1,42 @@
-<%= form_for(@guitars, class: 'form-horizontal', role: 'form') do |f| %>
-    <div class="container-sindan">
-        <div class="row">
-            <div class="col-12">
-                <p>練習したいテクニックは？</p>
-            </div>
-            <div class="col-6">
-                <p><%= f.radio_button :question, "1" %>アルペジオ</p>
-            </div>
-            <div class="col-6">
-                <p><%= f.radio_button :question, "2" %>ハマリング・プリング</p>
-            </div>
-            <div class="col-6">
-                <p><%= f.radio_button :question, "3" %>スライド</p>
-            </div>
-            <div class="col-6">
-                <p><%= f.radio_button :question, "4" %>スラップ</p>
-            </div>
-            <div class="col-6">
-                <p><%= f.radio_button :question, "5" %>チョーキング</p>
-            </div>
-            <div class="col-6">
-                <p><%= f.radio_button :question, "6" %>初心者おすすめ</p>
-            </div>
-            
+<head>
+    <link rel="stylesheet" type="text/css" href="guitars.scss">
+</head>
 
-        </div>
+<body>
+    <div class="back">
+            <div class="sindan">
+                <%= form_for(@guitars, class: 'form-horizontal', role: 'form') do |f| %>
+                    <div class="container-sinndann">
+                        <div class="row">
+                            <div class="col-12">
+                                <p>＜演奏したいのは？＞</p>
+                            </div>
+                            <div class="col-6">
+                                <p><%= f.radio_button :question, "1" %>アコギで弾き語りたい曲</p>
+                            </div>
+                            <div class="col-6">
+                                <p><%= f.radio_button :question, "2" %>初心者向け簡単コード弾き</p>
+                            </div>
+                            <div class="col-6">
+                                <p><%= f.radio_button :question, "3" %>カポ無しで引ける曲</p>
+                            </div>
+                            <div class="col-6">
+                                <p><%= f.radio_button :question, "4" %>ギターフレーズがかっこいい曲</p>
+                            </div>
+                            <div class="col-6">
+                                <p><%= f.radio_button :question, "5" %>バンドコピーしたい曲</p>
+                            </div>
+                            <div class="col-6">
+                                <p><%= f.radio_button :question, "6" %>ピアノが弾きたくなる曲</p>
+                            </div>
+                            
+                        </div>
+                        <div class="sindanbotan">
+                            <%= f.submit "おすすめを見る" %>
+                        </div>
+                    </div>
+                <% end %>
+            </div>
+        
     </div>
-    <div class="sindanbotan">
-        <%= f.submit "post" %>
-    </div>
-<% end %>
+</body>

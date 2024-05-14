@@ -3,68 +3,59 @@
             <p>あなたにおすすめの曲は…</p>
         </div>
         <div class="tweet-container">
-            <div class="tweet">
+            <div class="music">
                 <% case [@posts.question] %>
                 <% when ["1"] %>
-                <p>・<%= link_to 'あの夏に咲け', post_path(anchor: 'target1') %></p>
+            <div class="results">
                 <p>・<%= link_to '夜紛い', post_path(anchor: 'target2') %></p>
                 <p>・<%= link_to '踊ろうぜ', post_path(anchor: 'target3') %></p>
-                <p>・<%= link_to '歩く', post_path(anchor: 'target4') %></p>
-                <p>・<%= link_to '花人局', post_path(anchor: 'target5') %></p>
                 <p>・<%= link_to '春泥棒', post_path(anchor: 'target6') %></p>
                 <p>・<%= link_to '老人と海', post_path(anchor: 'target7') %></p>
                 <p>・<%= link_to 'ブレーメン', post_path(anchor: 'target8') %></p>
-                <p>・<%= link_to '都落ち', post_path(anchor: 'target9') %></p>
                 <p>・<%= link_to '晴る', post_path(anchor: 'target10') %></p>
+            </div>
 
-                <h2><div id="target1">あの夏に咲け</div></h2>
-                <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/jp/album/%E3%81%82%E3%81%AE%E5%A4%8F%E3%81%AB%E5%92%B2%E3%81%91/1648881903?i=1648882056"></iframe>
-
+            <div class="result">
                 <h2><div id="target2">夜紛い</div></h2>
                 <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/jp/album/%E5%A4%9C%E7%B4%9B%E3%81%84/1648876058?i=1648877043"></iframe>
 
                 <h2><div id="target3">踊ろうぜ</div></h2>
                 <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/jp/album/%E8%B8%8A%E3%82%8D%E3%81%86%E3%81%9C/1648876058?i=1648876743"></iframe>
 
-                <h2><div id="target4">歩く</div></h2>
-                <iframe src="https://www.youtube.com/embed/OuSFM2l9OaI" title="ヨルシカ LIVE「歩く / 心に穴が空いた」" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtue"></iframe>
-
-                <h2><div id="target5"></div>花人局</h2>
-                <iframe src="https://www.youtube.com/embed/Ht6lcYg9Zfo" title="ヨルシカ Live「花人局 / 春泥棒」" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtube"></iframe>
-                
                 <h2><div id="target6"></div>春泥棒</h2>
-                <iframe src="https://www.youtube.com/embed/Sw1Flgub9s8" title="ヨルシカ - 春泥棒（OFFICIAL VIDEO）" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtube"></iframe>
+                <iframe width='560' height='315' src="https://www.youtube.com/embed/Sw1Flgub9s8" title="ヨルシカ - 春泥棒（OFFICIAL VIDEO）" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtube"></iframe>
 
                 <h2><div id="target7"></div>老人と海</h2>
-                <iframe src="https://www.youtube.com/embed/WwnZeQiI6hQ" title="The Old Man and the Sea" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtube"></iframe>
+                <iframe width='560' height='315' src="https://www.youtube.com/embed/WwnZeQiI6hQ" title="The Old Man and the Sea" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtube"></iframe>
 
                 <h2><div id="target8"></div>ブレーメン</h2>
-                <iframe src="https://www.youtube.com/embed/oy6MDr6I6rM" title="ヨルシカ - ブレーメン（OFFICIAL VIDEO）" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtube"></iframe>
-
-                <h2><div id="target9"></div>都落ち</h2>
-                <iframe src="https://www.youtube.com/embed/pHdJmDFYqTU" title="ヨルシカ - 都落ち" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtube"></iframe>
+                <iframe width='560' height='315' src="https://www.youtube.com/embed/oy6MDr6I6rM" title="ヨルシカ - ブレーメン（OFFICIAL VIDEO）" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtube"></iframe>
 
                 <h2><div id="target10"></div>晴る</h2>
-                <iframe src="https://www.youtube.com/embed/CkvWJNt77mU" title="ヨルシカ - 晴る" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtube"></iframe>
+                <iframe width='560' height='315' src="https://www.youtube.com/embed/CkvWJNt77mU" title="ヨルシカ - 晴る" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtube"></iframe>
+            </div>
 
                 
 
                 <% when ["2"] %>
+            <div class="results">
                 <p>・<%= link_to '思想犯', post_path(anchor: 'deep1') %></p>
                 <p>・<%= link_to '盗作', post_path(anchor: 'deep2') %></p>
                 <p>・<%= link_to '春ひさぎ', post_path(anchor: 'deep3') %></p>
                 <p>・<%= link_to '昼鳶', post_path(anchor: 'deep4') %></p>
                 <p>・<%= link_to '強盗と花束', post_path(anchor: 'deep5') %></p>
                 <p>・<%= link_to '月に吠える', post_path(anchor: 'deep6') %></p>
-                
+            </div>
+              
+            <div class="result">
                 <h2><div id="deep1">思想犯</div></h2>
-                <iframe src="https://www.youtube.com/embed/ENcnYh79dUY" title="ヨルシカ - 思想犯（OFFICIAL VIDEO）" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtube"></iframe>
+                <iframe width='560' height='315' src="https://www.youtube.com/embed/ENcnYh79dUY" title="ヨルシカ - 思想犯（OFFICIAL VIDEO）" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtube"></iframe>
 
                 <h2><div id="deep2">盗作</div></h2>
-                <iframe src="https://www.youtube.com/embed/CS4f3jawFxY" title="ヨルシカ - 盗作（OFFICIAL VIDEO）" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtube"></iframe>
+                <iframe width='560' height='315' src="https://www.youtube.com/embed/CS4f3jawFxY" title="ヨルシカ - 盗作（OFFICIAL VIDEO）" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtube"></iframe>
 
                 <h2><div id="deep3">春ひさぎ</div></h2>
-                <iframe src="https://www.youtube.com/embed/F3cXxqgbx9Y" title="ヨルシカ - 春ひさぎ（OFFICIAL VIDEO）" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtube"></iframe>
+                <iframe width='560' height='315' src="https://www.youtube.com/embed/F3cXxqgbx9Y" title="ヨルシカ - 春ひさぎ（OFFICIAL VIDEO）" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtube"></iframe>
 
                 <h2><div id="deep4">昼鳶</div></h2>
                 <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/jp/album/%E6%98%BC%E9%B3%B6/1519740112?i=1519740120"></iframe>
@@ -73,96 +64,105 @@
                 <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/jp/album/%E5%BC%B7%E7%9B%97%E3%81%A8%E8%8A%B1%E6%9D%9F/1546186120?i=1546186121"></iframe>
 
                 <h2><div id="deep6">月に吠える</div></h2>
-                <iframe src="https://www.youtube.com/embed/wCN9WliV-ew" title="ヨルシカ - 月に吠える（OFFICIAL VIDEO）" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtube"></iframe>
+                <iframe width='560' height='315' src="https://www.youtube.com/embed/wCN9WliV-ew" title="ヨルシカ - 月に吠える（OFFICIAL VIDEO）" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtube"></iframe>
+            </div>
 
                 <% when ["3"] %>
-                <p>・<%= link_to '準透明人間', post_path(anchor: 'fast1') %></p>
-                <p>・<%= link_to '負け犬にアンコールはいらない', post_path(anchor: 'fast2') %></p>
-                <p>・<%= link_to 'だから僕は音楽を辞めた', post_path(anchor: 'fast3') %></p>
+            <div class="results">
                 <p>・<%= link_to '五月は花緑青の窓辺から', post_path(anchor: 'fast4') %></p>
                 <p>・<%= link_to '八月、某、月明かり', post_path(anchor: 'fast5') %></p>
-                <p>・<%= link_to '藍二乗', post_path(anchor: 'fast6') %></p>
                 <p>・<%= link_to '心に穴が空いた', post_path(anchor: 'fast7') %></p>
                 <p>・<%= link_to '夕凪、某、花惑い', post_path(anchor: 'fast8') %></p>
                 <p>・<%= link_to '又三郎', post_path(anchor: 'fast9') %></p>
+            </div>
 
-                <h2><div id="fast1">準透明人間</div></h2>
-                <iframe src="https://www.youtube.com/embed/9ypEFXTakV8" title="ヨルシカ - 準透明少年 (MUSIC VIDEO)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtube"></iframe>
-
-                <h2><div id="fast2">負け犬にアンコールはいらない</div></h2>
-                <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/jp/album/%E8%B2%A0%E3%81%91%E7%8A%AC%E3%81%AB%E3%82%A2%E3%83%B3%E3%82%B3%E3%83%BC%E3%83%AB%E3%81%AF%E3%81%84%E3%82%89%E3%81%AA%E3%81%84/1648875799?i=1648875825"></iframe>
-
-                <h2><div id="fast3">だから僕は音楽を辞めた</div></h2>
-                <iframe src="https://www.youtube.com/embed/KTZ-y85Erus" title="ヨルシカ - だから僕は音楽を辞めた (Music Video)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtube"></iframe>
-                
+            <div class="result">
                 <h2><div id="fast4">五月は花緑青の窓辺から</div></h2>
                 <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/jp/album/%E4%BA%94%E6%9C%88%E3%81%AF%E8%8A%B1%E7%B7%91%E9%9D%92%E3%81%AE%E7%AA%93%E8%BE%BA%E3%81%8B%E3%82%89/1648876058?i=1648877033"></iframe>
 
                 <h2><div id="fast5">八月、某、月明かり</div></h2>
                 <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/jp/album/%E5%85%AB%E6%9C%88-%E6%9F%90-%E6%9C%88%E6%98%8E%E3%81%8B%E3%82%8A/1648876058?i=1648876473"></iframe>
 
-                <h2><div id="fast6">藍二乗</div></h2>
-                <iframe src="https://www.youtube.com/embed/4MoRLTAJY_0" title="ヨルシカ - 藍二乗 (Music Video)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtube"></iframe>
-
                 <h2><div id="fast7">心に穴が空いた</div></h2>
-                <iframe src="https://www.youtube.com/embed/DlyG6MAKUOA" title="ヨルシカ - 心に穴が空いた (Music Video)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtube"></iframe>
+                <iframe width='560' height='315' src="https://www.youtube.com/embed/DlyG6MAKUOA" title="ヨルシカ - 心に穴が空いた (Music Video)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtube"></iframe>
 
                 <h2><div id="fast8">夕凪、某、花惑い</div></h2>
                 <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/jp/album/%E5%A4%95%E5%87%AA-%E6%9F%90-%E8%8A%B1%E6%83%91%E3%81%84/1474061924?i=1474062329"></iframe>
 
                 <h2><div id="fast9">又三郎</div></h2>
-                <iframe src="https://www.youtube.com/embed/siNFnlqtd8M" title="ヨルシカ - 又三郎（OFFICIAL VIDEO）" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtube"></iframe>
-                
+                <iframe width='560' height='315' src="https://www.youtube.com/embed/siNFnlqtd8M" title="ヨルシカ - 又三郎（OFFICIAL VIDEO）" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtube"></iframe>
+            </div>
                 
 
                 <% when ["4"] %>
-                <p>・<%= link_to 'パレード', post_path(anchor: 'emo1') %></p>
-                <p>・<%= link_to 'ノーチラス', post_path(anchor: 'emo2') %></p>
-                <p>・<%= link_to 'エルマ', post_path(anchor: 'emo3') %></p>
+            <div class="results">
                 <p>・<%= link_to '憂一乗', post_path(anchor: 'emo4') %></p>
-                <p>・<%= link_to '花に亡霊', post_path(anchor: 'emo5') %></p>
                 <p>・<%= link_to '嘘月', post_path(anchor: 'emo6') %></p>
                 <p>・<%= link_to '夜行', post_path(anchor: 'emo7') %></p>
                 <p>・<%= link_to 'アルジャーノン', post_path(anchor: 'emo8') %></p>
                 <p>・<%= link_to '第一夜', post_path(anchor: 'emo9') %></p>
-                  
-                <h2><div id="emo1">パレード</div></h2>
-                <iframe src="https://www.youtube.com/embed/ry3Tupx4BL4" title="ヨルシカ - パレード (Music Video)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtube"></iframe>
+            </div>      
 
-                <h2><div id="emo2">ノーチラス</div></h2>
-                <iframe src="https://www.youtube.com/embed/j83OVgv6woA" title="ヨルシカ - ノーチラス (OFFICIAL VIDEO)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtube"></iframe>
-
-                <h2><div id="emo3">エルマ</div></h2>
-                <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/jp/album/%E3%82%A8%E3%83%AB%E3%83%9E/1648876058?i=1648877308"></iframe>
-
+            <div class="result">
                 <h2><div id="emo4">憂一乗</div></h2>
                 <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/jp/album/%E6%86%82%E4%B8%80%E4%B9%97/1474061924?i=1474061935"></iframe>
-
-                <h2><div id="emo5">花に亡霊</div></h2>
-                <iframe src="https://www.youtube.com/embed/9lVPAWLWtWc" title="ヨルシカ - 花に亡霊（OFFICIAL VIDEO）" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtube"></iframe>
 
                 <h2><div id="emo6">嘘月</div></h2>
                 <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/jp/album/%E5%98%98%E6%9C%88/1546186120?i=1546186126"></iframe>
 
                 <h2><div id="emo7">夜行</div></h2>
-                <iframe src="https://www.youtube.com/embed/MH5noJJfqDY" title="ヨルシカ - 夜行 (OFFICIAL VIDEO)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtube"></iframe>
+                <iframe width='560' height='315' src="https://www.youtube.com/embed/MH5noJJfqDY" title="ヨルシカ - 夜行 (OFFICIAL VIDEO)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtube"></iframe>
 
                 <h2><div id="emo8">アルジャーノン</div></h2>
-                <iframe src="https://www.youtube.com/embed/_9_rUFrgLI8" title="ヨルシカ - アルジャーノン" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtube"></iframe>
+                <iframe width='560' height='315' src="https://www.youtube.com/embed/_9_rUFrgLI8" title="ヨルシカ - アルジャーノン" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtube"></iframe>
 
                 <h2><div id="emo9">第一夜</div></h2>
-                <iframe src="https://www.youtube.com/embed/-R8UiY_44Y0" title="ヨルシカ - 第一夜" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtube"></iframe>
+                <iframe width='560' height='315' src="https://www.youtube.com/embed/-R8UiY_44Y0" title="ヨルシカ - 第一夜" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtube"></iframe>
+            </div>
 
                 
                 <% when ["5"] %>
-                <p>・<%= link_to '', post_path(anchor: '') %></p>
-                <p>・<%= link_to '', post_path(anchor: '') %></p>
+            <div class="results">
+                <p>・<%= link_to 'ノーチラス', post_path(anchor: 'moved1') %></p>
+                <p>・<%= link_to '靴の花火', post_path(anchor: 'moved2') %></p>
+                <p>・<%= link_to '藍二乗', post_path(anchor: 'moved3') %></p>
+                <p>・<%= link_to 'パレード', post_path(anchor: 'moved4') %></p>
+                <p>・<%= link_to 'エルマ', post_path(anchor: 'moved5') %></p>
+            </div>
+
+            <div class="result">
+                <h2><div id="moved1">ノーチラス</div></h2>
+                <iframe width='560' height='315' src="https://www.youtube.com/embed/j83OVgv6woA?si=J88nk7-WrSjX_7Lo" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtube"></iframe>
+
+                <h2><div id="moved2">靴の花火</div></h2>
+                <iframe width='560' height='315' src="https://www.youtube.com/embed/BCt9lS_Uv_Y?si=h92Dy_LPeh10IdL5" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <h2><div id="moved3">藍二乗</div></h2>
+                <iframe width='560' height='315' src="https://www.youtube.com/embed/4MoRLTAJY_0" title="ヨルシカ - 藍二乗 (Music Video)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtube"></iframe>
+
+                <h2><div id="moved4">パレード</div></h2>
+                <iframe width='560' height='315' src="https://www.youtube.com/embed/ry3Tupx4BL4?si=-kHgW_oiRM3K8YjR" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <h2><div id="moved5">エルマ</div></h2>
+                <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/jp/album/%E3%82%A8%E3%83%AB%E3%83%9E/1648876058?i=1648877308"></iframe>
+            </div>
 
                 <% when ["6"] %>
-                <h6>おまかせ</h6>
-                <p>爽やかなのに官能的な香り</p>
-                <p>幸福感を得やすい</p>
-
+            <div class="results">
+                <p>・<%= link_to '', post_path(anchor: '') %></p>
+                <p>・<%= link_to '', post_path(anchor: '') %></p>
+                <p>・<%= link_to '', post_path(anchor: '') %></p>
+                <p>・<%= link_to '', post_path(anchor: '') %></p>
+                <p>・<%= link_to '', post_path(anchor: '') %></p>
+            </div>
+              
+            <div class="result">
+                <h2><div id=""></div></h2>
+                <h2><div id=""></div></h2>
+                <h2><div id=""></div></h2>
+                <h2><div id=""></div></h2>
+                <h2><div id=""></div></h2>
+            </div>
 
                 <% end %>     
 
